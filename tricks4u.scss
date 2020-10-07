@@ -2,6 +2,7 @@
   font-family: 'Urban';
   src: url('urban.ttf') format('truetype');
   font-weight: normal;
+  font-display: block;
   font-style: normal;
 }
 body {
@@ -14,7 +15,7 @@ body {
   }
 }
 header {
-  background-image: url("images/roadtexture2.jpg");
+  background-image: url("images/roadtexture.webp");
   background-repeat: repeat;
   width: 100%;
   margin: 0;
@@ -61,7 +62,7 @@ header {
   }
 }
 nav {
-  background-image: url("images/roadtexture2.jpg");
+  background-image: url("images/roadtexture.webp");
   background-repeat: repeat;
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +85,11 @@ nav {
   .submenu {
     .mainitem {
       position: relative;
+      margin: 0 2px 0 2px;
+      font-weight: 600;
+      padding: 10px;
+      background-color: #242424;
+      color: #e7b416;
     }
     .subitems {
       position: absolute;
@@ -183,7 +189,7 @@ footer {
       display: block;
       width: 100%;
       color: black;
-      font-family: Oswald;
+      font-family: Urban;
       font-weight: bold;
     }
   }

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Urban";
+  src: url("urban.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  Font-family: "Oswald", sans-serif;
+}
+body a:link {
+  text-decoration: unset;
+}
+
+header {
+  background-image: url("images/roadtexture2.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  margin: 0;
+  background-color: #424242;
+  color: #e7b416;
+}
+header h1 {
+  margin: 0;
+  padding: 15px;
+  font-weight: normal;
+  font-family: "Urban";
+  text-align: center;
+}
+header .social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: #424242;
+}
+header .social p {
+  font-style: italic;
+  margin: 0 8px 0 8px;
+  font-size: 20px;
+}
+header .social .icons {
+  margin: 2px;
+}
+header .social .icons i {
+  padding: 2px;
+  font-size: 20px;
+}
+header .social .icons i:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  background-image: url("images/roadtexture2.jpg");
+  background-repeat: repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: start;
+  width: 100%;
+  margin: 0;
+  background-color: #424242;
+}
+nav a {
+  margin: 0 2px 0 2px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #242424;
+  color: #e7b416;
+}
+nav a:hover {
+  transform: scale(1.1);
+}
+nav .submenu .mainitem {
+  position: relative;
+}
+nav .submenu .subitems {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: none;
+}
+
+main {
+  color: #242424;
+  background-color: #f3f3f3;
+}
+main .title {
+  margin: 0px 20px 10px 20px;
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+main .desc {
+  font-size: 20px;
+  padding: 0px 30px 0px 30px;
+  margin: 0;
+}
+main .subtitle {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0px 20px 10px 20px;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding-top: 10px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+footer p {
+  margin: 0 20px;
+}
+footer a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardsection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem 1rem;
+  gap: 1rem 1rem;
+}
+.cardsection .card {
+  margin: 0 20px;
+  padding: 7px;
+  color: #e7b416;
+  background-color: #424242;
+  box-shadow: 2px 2px 5px #242424;
+}
+.cardsection .card h1 {
+  color: #e7b416;
+  margin: 0 20px;
+  font-weight: 400;
+}
+.cardsection .card img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
+.cardsection .card:hover {
+  transform: scale(1.02);
+}
+
+#tricks .desc {
+  font-size: 20px;
+  padding: 0px 30px 20px 30px;
+  margin: 0;
+}
+#tricks iframe {
+  width: 100%;
+  height: 300px;
+}
+#tricks .card:hover {
+  transform: unset;
+}
+
+@media (max-width: 300px) {
+  body #not-supported {
+    display: block;
+    width: 100%;
+    color: black;
+    font-family: Oswald;
+    font-weight: bold;
+  }
+
+  header {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  body #not-supported {
+    display: none;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  body #not-supported {
+    display: none;
+  }
+}
+@media (min-width: 901px) and (max-width: 2000px) {
+  body #not-supported {
+    display: none;
+  }
+}
+@media (min-width: 2001px) {
+  body #not-supported {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=tricks4u.css.map */

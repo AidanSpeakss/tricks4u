@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tricks4U</title>
+        <script src="https://kit.fontawesome.com/235e86c50a.js" crossorigin="anonymous"></script>
+        <script>
+            function submenu(menu) {
+                if (menu == 'true') {
+                    if (document.getElementsByClassName("subitems")[0].style.display == "grid") {
+                        document.getElementsByClassName("subitems")[0].style.display = "none";
+                    } else {
+                        document.getElementsByClassName("subitems")[0].style.display = "grid";
+                    }
+                }
+                if (menu !== 'true' || !menu) {
+                    document.getElementsByClassName("subitems")[0].style.display = "none";
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="tricks4u.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="home">
+        <header>
+            <h1>Tricks4U</h1>
+            <div class="social">
+                <p>Socials</p>
+                <div class="icons">
+                    <i onclick="window.open('https://facebook.com/Tricks4U')" class="fab fa-facebook-square"></i>
+                    <i onclick="window.open('https://instagram.com/Tricks4U')" class="fab fa-instagram"></i>
+                    <i onclick="window.open('https://twitter.com/Tricks4U')" class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div onmouseover="submenu('true')" onmouseout="submenu('false')" class="submenu">
+                <a class="mainitem">Videos</a>
+                <div class="subitems">
+                    <a class="subitem" href="videos/basic_tricks.html">Basic Tricks</a>
+                    <a class="subitem" href="videos/flip_tricks.html">Flip Tricks</a>
+                    <a class="subitem" href="videos/grinds_slides.html">Grinds/Slides</a>
+                    <a class="subitem" href="videos/ramp_tricks.html">Ramp Tricks</a>
+                    <a class="subitem" href="videos/grabs_airs.html">Grabs/Airs</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <main>
+            <h1 class="title">Our Purpose</h1>
+            <p class="desc">Tricks4U is a place to learn new skating tricks, it has a catalog of informational tutorial-like videos that make it easy to find new tricks and to learn them.</p>
+            <h1 class="title">Our Audience</h1>
+            <p class="desc">The target audience for Tricks4U is teenage skateboarders from ages 13 to 18.</p>
+            <h1 class="title">Our Content</h1>
+            <p class="desc">Video tutorials about how to perform specific skateboarding tricks.</p>
+        </main>
+        <footer>
+            <p>Copyright 2020 © Tricks4U</p>
+            <p>Developed/Designed by Aidan Raney<a href="https://devaidan.com">Devaidan</a></p>
+        </footer>
+        <span id="not-supported">This device is not supported. Please use a device with a larger screen.</span>
+    </body>
+</html>

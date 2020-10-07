@@ -197,6 +197,7 @@ footer a {
   object-fit: contain;
 }
 .cardsection .card:hover {
+  cursor: pointer;
   transform: scale(1.02);
 }
 

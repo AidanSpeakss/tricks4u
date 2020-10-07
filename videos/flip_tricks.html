@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tricks4U | Flip Tricks</title>
+        <script src="https://kit.fontawesome.com/235e86c50a.js" crossorigin="anonymous"></script>
+        <script>
+            function submenu(menu) {
+                if (menu == 'true') {
+                    if (document.getElementsByClassName("subitems")[0].style.display == "grid") {
+                        document.getElementsByClassName("subitems")[0].style.display = "none";
+                    } else {
+                        document.getElementsByClassName("subitems")[0].style.display = "grid";
+                    }
+                }
+                if (menu !== 'true' || !menu) {
+                    document.getElementsByClassName("subitems")[0].style.display = "none";
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="../tricks4u.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="home">
+    <header>
+        <h1>Tricks4U</h1>
+        <div class="social">
+            <p>Socials</p>
+            <div class="icons">
+                <i onclick="window.open('https://facebook.com/Tricks4U')" class="fab fa-facebook-square"></i>
+                <i onclick="window.open('https://instagram.com/Tricks4U')" class="fab fa-instagram"></i>
+                <i onclick="window.open('https://twitter.com/Tricks4U')" class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <div onmouseover="submenu('true')" onmouseout="submenu('false')" class="submenu">
+            <a class="mainitem">Videos</a>
+            <div class="subitems">
+                <a class="subitem" href="basic_tricks.html">Basic Tricks</a>
+                <a class="subitem" href="flip_tricks.html">Flip Tricks</a>
+                <a class="subitem" href="grinds_slides.html">Grinds/Slides</a>
+                <a class="subitem" href="ramp_tricks.html">Ramp Tricks</a>
+                <a class="subitem" href="grabs_airs.html">Grabs/Airs</a>
+            </div>
+        </div>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    <main id="tricks">
+        <h1 class="title">Flip Tricks</h1>
+        <p class="desc">A collection of video tutorials on flip tricks.</p>
+        <div class="cardsection">
+            <div class="card">
+                <h1>Heel Flip</h1>
+                <iframe src="https://www.youtube.com/embed/OvJUBb9aXZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <h1>Inward Heel Flip</h1>
+                <iframe src="https://www.youtube.com/embed/CzS3zqb4DOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <h1>Kick Flip</h1>
+                <iframe src="https://www.youtube.com/embed/4XgjDhSnTtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright 2020 © Tricks4U</p>
+        <p>Developed/Designed by Aidan Raney<a href="https://devaidan.com">Devaidan</a></p>
+    </footer>
+    <span id="not-supported">This device is not supported. Please use a device with a larger screen.</span>
+    </body>
+</html>

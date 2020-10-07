@@ -87,6 +87,7 @@ header .social .socialicons {
   margin: 2px;
 }
 header .social .socialicons i {
+  cursor: pointer;
   padding: 2px;
   font-size: 20px;
 }

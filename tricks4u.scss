@@ -5,6 +5,43 @@
   font-display: block;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7z01ku');
+  src:  url('fonts/icomoon.eot?7z01ku#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?7z01ku') format('truetype'),
+  url('fonts/icomoon.woff?7z01ku') format('woff'),
+  url('fonts/icomoon.svg?7z01ku#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-square:before {
+  content: "\f081";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+
 body {
   margin: 0;
   Font-family: 'Oswald', sans-serif;
@@ -47,16 +84,16 @@ header {
       margin: 0 8px 0 8px;
       font-size: 20px;
     }
-    .icons {
+    .socialicons {
       margin: 2px;
       i {
         padding: 2px;
         font-size: 20px;
       }
     }
-    .icons {
+    .socialicons {
       i:hover {
-        transform: scale(1.05);
+        font-size: 21px;
       }
     }
   }
